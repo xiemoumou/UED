@@ -1,11 +1,3 @@
-<!-- 配置文件 -->
-<!-- <script type="text/javascript" src="ueditor/ueditor.config.js"></script> -->
-<!-- 编辑器源码文件 -->
-<!-- <script type="text/javascript" src="ueditor/ueditor.all.js"></script> -->
-
-
-<!-- 加载编辑器的容器 -->
-
 <!--内容部分-->
 <div class="m-warp-box">
     <div class="news-nav-wrap">
@@ -28,15 +20,15 @@
                 </div>
                  <h6 class="f-pb10 f-mt10">文章正文</h6>
                  <div class="f-mt30 f-edit">
-                     <script id="f-editor" name="content" type="text/plain">
-                            这里写你的初始化内容
+                    <script id="f-editor" name="content" defer type="text/plain">
+                        这里写你的初始化内容
                     </script>
                  </div>
                  <h6 class="f-pb10 f-mt10">上传文章封面</h6>
                  <div class="f-mt20 f-upload">
                      <span>
                         <image src="images/upload.png" width="100%">
-                         <input type="file" class="file" name="">
+                         <input type="file" class="file" onchange="PreviewImage(this)" name="">
                      </span>
                      <span>
                          <p>1.图片大小不能超过5M</p>
@@ -45,13 +37,17 @@
                  </div>
                  <h6 class="f-pb10 f-mt20">添加标签</h6>
                  <div class="f-mt20 f-label">
-                     <span>
+                     <!-- <span>
                          <input type="text" placeholder="添加标签" name="">(最低添加5个标签)
-                     </span>
+                     </span> -->
+                     <div class="input-lable"><span class="f-placeholer">添加标签<span></div><span class="f-info">(最低添加5个标签)</span>
                      <ul>
-                         <li><a href="">互联网</a></li>
-                         <li><a href="">交互设计</a></li>
-                         <li><a href="">HTML5</a></li>
+                         <li><a href="javascript:;">互联网</a></li>
+                         <li><a href="javascript:;">交互设计</a></li>
+                         <li><a href="javascript:;">HTML5</a></li>
+                         <li><a href="javascript:;">js</a></li>
+                         <li><a href="javascript:;">css</a></li>
+                         <li><a href="javascript:;">node</a></li>
                      </ul>
                  </div>
                  <div class="f-mt20 text-center">

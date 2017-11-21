@@ -29,18 +29,17 @@
         <!-- <span class="pull-right f-mt28 f-ml10 f-color"><a ui-sref="write" href="">写文章</a></span> -->
         <login-reg ng-hide="lrstatus"></login-reg>
 
-        <!-- <span class="pull-right f-mt28 f-ml10 f-color" ng-show="realname" ng-click="logout()"><a href="javascript:;">退出</a></span> -->
-
         <span class="pull-right f-mt28 f-postion-r" ng-show="realname">
             欢迎您:
             <a href="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true" data-toggle="dropdown"><span ng-bind="userName"></span>
             <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 我的主页</a></li>
-                <li><a ui-sref="write" href="#"><span class="glyphicon glyphicon-list-alt"></span> 文章发表</a></li>
+                <li><a ui-sref="index"><span class="glyphicon glyphicon-user"></span> 我的主页</a></li>
+                <li><a ui-sref="works"><span class="glyphicon glyphicon-user"></span> 我的作品</a></li>
+                <li><a ui-sref="write" href=""><span class="glyphicon glyphicon-list-alt"></span> 文章发表</a></li>
                 <li role="separator" class="divider"></li>
-                <li><a href="#"><span class="glyphicon glyphicon-off"> 退出</a></li>
+                <li><a href=""><span class="glyphicon glyphicon-off"> 退出</a></li>
             </ul>
         </span>
         
@@ -49,8 +48,8 @@
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="请输入关键词搜索…" ng-model="headerSearch">
                 <span type="submit" class="input-group-addon" ng-click="subSearch()">
-							<a href="#"><span class="glyphicon glyphicon-search"></span></a>
-						</span>
+					<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+				</span>
             </div>
 
         </form>

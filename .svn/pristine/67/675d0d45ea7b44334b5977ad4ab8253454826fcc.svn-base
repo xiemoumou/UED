@@ -1,0 +1,59 @@
+<!--内容部分-->
+<div class="m-warp-box">
+    <div class="news-nav-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="navbar-text">
+                        发表文章 
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row article">
+            <div class="col-md-12">
+                <h6>文章标题</h6>
+                <div class="f-mt30">
+                    <input type="text" name="" placeholder="请输入文章标题" id="">
+                </div>
+                 <h6 class="f-pb10 f-mt10">文章正文</h6>
+                 <div class="f-mt30 f-edit">
+                    <script id="f-editor" name="content" defer type="text/plain">
+                        这里写你的初始化内容
+                    </script>
+                 </div>
+                 <h6 class="f-pb10 f-mt10">上传文章封面</h6>
+                 <div class="f-mt20 f-upload">
+                     <span>
+                        <image src="images/upload.png" width="100%">
+                         <input type="file" class="file" onchange="PreviewImage(this)" name="">
+                     </span>
+                     <span>
+                         <p>1.图片大小不能超过5M</p>
+                         <p>2.支持格式:JPG、PNG、GIF、BMP</p>
+                     </span>
+                 </div>
+                 <h6 class="f-pb10 f-mt20">添加标签</h6>
+                 <div class="f-mt20 f-label">
+                     <!-- <span>
+                         <input type="text" placeholder="添加标签" name="">(最低添加5个标签)
+                     </span> -->
+                     <div class="input-lable"><span class="f-placeholer">添加标签<span></div><span class="f-info">(最低添加5个标签)</span>
+                     <ul>
+                         <li><a href="javascript:;">互联网</a></li>
+                         <li><a href="javascript:;">交互设计</a></li>
+                         <li><a href="javascript:;">HTML5</a></li>
+                         <li><a href="javascript:;">js</a></li>
+                         <li><a href="javascript:;">css</a></li>
+                         <li><a href="javascript:;">node</a></li>
+                     </ul>
+                 </div>
+                 <div class="f-mt20 text-center">
+                     <button class="btn  f-btn-fb">发布</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

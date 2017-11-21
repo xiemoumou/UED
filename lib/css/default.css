@@ -709,6 +709,7 @@ a[rel="tag"]:hover {
   border: 1px solid #E5E5E5;
 }
 .f-label{
+  position: relative;
   overflow: hidden;
   padding-bottom: 36px;
   border-bottom: 1px solid #E5E5E5;
@@ -773,4 +774,23 @@ a[rel="tag"]:hover {
     color: #fff;
     background: #a0ce4e;
     text-decoration: none;
+}
+.f-label .input-lable i{
+  cursor: pointer;
+}
+.f-info{
+  position: absolute;
+  top:10px;
+  right:80px;
+}
+.input-lable .f-placeholer{
+  color: #999;
+}
+.input-lable{
+  width: 900px;
+  height: 40px;
+  line-height: 40px;
+  padding:0 10px;
+  border: 1px solid #ddd;
+  display: inline-block;
 }
