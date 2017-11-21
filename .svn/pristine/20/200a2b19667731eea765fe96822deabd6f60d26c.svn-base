@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>文章发布</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<button onclick="getContent()">获得内容</button>
+<!-- 加载编辑器的容器 -->
+<script id="container" name="content" style="height: 100%;width: 500px" type="text/plain">
+    这里写你的初始化内容
+</script>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container',{
+        autoHeight:true
+    });
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('container').getContent());
+        alert(arr.join("\n"));
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+    </div>
+
+    <div class="collapse navbar-collapse navbar-right clearfix" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav pull-left">
+            <li ng-class="num==1?'active':''" ng-click="num=1">
+                <a ui-sref="index">首页 <span class="sr-only">(current)</span><span class="m-line" ></span></a>
+
+            </li>
+            <li style="position: relative;" ng-class="num==2?'active':''" ng-click="num=2">
+                <a ui-sref="news">技术文章<span class="m-line" ></span></a>
+
+            </li>
+            <li ng-class="num==3?'active':''" ng-click="num=3">
+                <a ui-sref="about">东润UED<span class="m-line"></span></a>
+
+            </li>
+        </ul>
+        <!--<a href="/loginPage">员工登录</a>-->
+        <!-- <span class="pull-right f-mt28 f-ml10 f-color"><a ui-sref="write" href="">写文章</a></span> -->
+        <login-reg ng-hide="lrstatus"></login-reg>
+
+        <!-- <span class="pull-right f-mt28 f-ml10 f-color" ng-show="realname" ng-click="logout()"><a href="javascript:;">退出</a></span> -->
+
+        <span class="pull-right f-mt28 f-postion-r" ng-show="realname">
+            欢迎您:
+            <a href="" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="true" data-toggle="dropdown"><span ng-bind="userName"></span>
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> 我的主页</a></li>
+                <li><a ui-sref="write" href="#"><span class="glyphicon glyphicon-list-alt"></span> 文章发表</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-off"> 退出</a></li>
+            </ul>
+        </span>
+        
+
+        <form class="navbar-form pull-right">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入关键词搜索…" ng-model="headerSearch">
+                <span type="submit" class="input-group-addon" ng-click="subSearch()">
+							<a href="#"><span class="glyphicon glyphicon-search"></span></a>
+						</span>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+	

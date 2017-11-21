@@ -1,0 +1,20 @@
+{
+  "name": "dr_ued",
+  "version": "1.0.0",
+  "description": "东润环能ued项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "东润环能前端组",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.9.4"
+  }
+}
